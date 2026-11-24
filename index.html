@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nhịp</title>
+<meta name="description" content="Nhịp: app quản lý cá nhân tự lưu trữ (việc, thói quen, chi tiêu, tập luyện, lịch).">
+<style>
+  :root{--bg:#16180f;--card:#1e2117;--text:#ecebdf;--muted:#a9ab9b;--accent:#98be84;--line:#2f3327}
+  @media (prefers-color-scheme: light){:root{--bg:#fdf6dc;--card:#fffbea;--text:#24451f;--muted:#55704f;--accent:#4f7a45;--line:#dcd8bb}}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+  main{max-width:640px;margin:0 auto;padding:48px 16px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:22px}
+  .mark{width:22px;height:22px;border-radius:6px;background:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:20px 0}
+  a{color:var(--accent)} li{margin:4px 0} .muted{color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo"><span class="mark"></span>Nhịp</div>
+  <p>Nhịp là app quản lý cá nhân <b>tự lưu trữ</b>: chạy trên máy tính của chính người dùng và chỉ được dùng bởi người đó, qua mạng nhà hoặc mạng riêng Tailscale. Đây không phải dịch vụ công khai và không có tài khoản cho người khác.</p>
+  <div class="card">
+    <b>Tính năng</b>
+    <ul>
+      <li>Hôm nay, dự án, việc hằng ngày, thói quen, Pomodoro</li>
+      <li>Chi tiêu và ngân sách, theo dõi tập tạ, thống kê</li>
+      <li>Lịch đồng bộ hai chiều với Google Calendar của chính người dùng</li>
+    </ul>
+  </div>
+  <div class="card">
+    <b>Vì sao Nhịp xin quyền Google Calendar?</b>
+    <p>Để hiện các sự kiện trong lịch của bạn ở trang Hôm nay/Lịch, và tạo sự kiện cho việc, thói quen có giờ trên một lịch riêng tên “Nhịp”. Dữ liệu chỉ được lưu trên máy của bạn.</p>
+  </div>
+  <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="terms.html">Điều khoản sử dụng</a></p>
+  <p class="muted">Nhịp — dự án cá nhân, mã nguồn và dữ liệu nằm trên máy của người dùng.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư · Nhịp</title>
+<style>
+  :root{--bg:#16180f;--text:#ecebdf;--muted:#a9ab9b;--accent:#98be84}
+  @media (prefers-color-scheme: light){:root{--bg:#fdf6dc;--text:#24451f;--muted:#55704f;--accent:#4f7a45}}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+  main{max-width:680px;margin:0 auto;padding:48px 16px}
+  h1{font-size:24px} h2{font-size:17px;margin-top:28px} a{color:var(--accent)} .muted{color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Nhịp</a></p>
+  <h1>Chính sách quyền riêng tư</h1>
+  <p class="muted">Cập nhật: 24/11/2026</p>
+
+  <h2>Nhịp là gì</h2>
+  <p>Nhịp là app quản lý cá nhân tự lưu trữ. Toàn bộ phần mềm và dữ liệu chạy trên máy tính của chính người dùng. Không có máy chủ trung gian nào do bên thứ ba vận hành.</p>
+
+  <h2>Dữ liệu Google mà Nhịp truy cập</h2>
+  <p>Khi người dùng chủ động kết nối Google Calendar, Nhịp yêu cầu quyền <code>https://www.googleapis.com/auth/calendar</code> để:</p>
+  <ul>
+    <li>Đọc sự kiện trong các lịch người dùng chọn, để hiển thị trong app.</li>
+    <li>Tạo một lịch riêng tên “Nhịp” và tạo/sửa/xóa sự kiện trên lịch đó cho các việc, thói quen có giờ.</li>
+    <li>Cập nhật lại việc trong app khi người dùng sửa sự kiện tương ứng trên lịch “Nhịp”.</li>
+  </ul>
+
+  <h2>Lưu trữ</h2>
+  <p>Sự kiện và mã truy cập (token) được lưu trong cơ sở dữ liệu SQLite trên máy của người dùng. Token không được gửi tới trình duyệt hay bất kỳ ai khác.</p>
+
+  <h2>Chia sẻ</h2>
+  <p>Nhịp không bán, không chia sẻ, không chuyển dữ liệu Google của người dùng cho bên thứ ba, và không dùng dữ liệu này cho quảng cáo hay huấn luyện mô hình AI.</p>
+  <p>Việc sử dụng và chuyển thông tin nhận được từ Google API của Nhịp tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, bao gồm các yêu cầu Limited Use.</p>
+
+  <h2>Xóa dữ liệu</h2>
+  <p>Người dùng có thể ngắt kết nối bất cứ lúc nào trong app (Lịch → Chọn lịch → Ngắt kết nối): Nhịp thu hồi token và xóa các sự kiện đã lưu. Cũng có thể thu hồi quyền tại <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Liên hệ</h2>
+  <p>Nhịp là dự án cá nhân. Câu hỏi về chính sách này xin gửi qua email hỗ trợ hiển thị trên màn hình đồng ý của Google.</p>
+</main>
+</body>
+</html>
